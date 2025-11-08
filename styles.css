@@ -12,6 +12,13 @@ body {
     background-color: #fff;
 }
 
+.terms {
+    padding: 0 60px; gap: 10px;
+    p {
+        font-size: 24px;
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
