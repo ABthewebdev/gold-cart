@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldCart - Transform Your Home Renovation Business</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex justify-between align-center">
+                <span style="font-size: 30px; font-weight: bold; list-style: none;" class="logo">GC</span>
+                <div class="header-contact">
+                    <a href="mailto:contact@goldcart.io" class="contact-link">contact@goldcart.io</a>
+                    <a href="tel:+15616214430" class="contact-link">+1(561) 621-4430</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Grow Your Home Renovation Brand with Confidence</h1>
+                <p class="hero-subtitle">The all-in-one platform that helps renovation businesses manage projects, delight customers, and scale operations effortlessly.</p>
+                <button class="ask-for-demo-btn" onclick="openDemoModal()">Ask for a demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Modal Popup -->
+    <div id="demoModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeDemoModal()">&times;</button>
+            <h2>Request a Demo</h2>
+            <p class="modal-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form name="demo-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmit(event)">
+                <input type="hidden" name="form-name" value="demo-request" />
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your renovation business and what you'd like to see in the demo..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Everything You Need to Run Your Business</h2>
+            <p class="section-subtitle">Streamline operations, boost productivity, and deliver exceptional results</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Project Management</h3>
+                    <p>Track every project from quote to completion. Keep your team aligned and clients informed with real-time updates.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Client Portal</h3>
+                    <p>Give clients 24/7 access to project timelines, photos, invoices, and communication—all in one beautiful interface.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Smart Invoicing</h3>
+                    <p>Create professional invoices, accept payments online, and automate follow-ups. Get paid faster with less hassle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Business Analytics</h3>
+                    <p>Make data-driven decisions with insights into profitability, project performance, and team productivity.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile App</h3>
+                    <p>Manage your business on the go. Update projects, communicate with clients, and track time from anywhere.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Integrations</h3>
+                    <p>Connect with your favorite tools. QuickBooks, Google Calendar, Slack, and more—all in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Why Leading Renovation Brands Choose GoldCart</h2>
+                    <div class="benefit-item">
+                        <h3>⚡ Save 10+ Hours Per Week</h3>
+                        <p>Automate repetitive tasks and focus on what matters—delivering amazing renovations.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>📈 Increase Revenue by 30%</h3>
+                        <p>Better project management means more projects completed on time and under budget.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>⭐ 5-Star Customer Experience</h3>
+                        <p>Delight clients with transparency, communication, and professional service at every step.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>🚀 Scale Without the Stress</h3>
+                        <p>Grow your team and take on more projects without losing control or quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span style="font-size: 30px; font-weight: bold; list-style: none;" class="logo">GC</span>
+                </div>
+                <div class="footer-contact">
+                    <p>contact@goldcart.io</p>
+                    <p>+1(561) 621-4430</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openDemoModal() {
+            document.getElementById('demoModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDemoModal() {
+            document.getElementById('demoModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('demoModal');
+            if (event.target === modal) {
+                closeDemoModal();
+            }
+        }
+
+        // Handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                // Show success message
+                const modalContent = document.querySelector('.modal-content');
+                modalContent.innerHTML = `
+                    <button class="modal-close" onclick="closeDemoModal()">&times;</button>
+                    <div class="success-message">
+                        <h2>Thank You!</h2>
+                        <p>Your demo request has been submitted successfully. We'll get back to you within 24 hours.</p>
+                        <button class="btn btn-primary" onclick="closeDemoModal()">Close</button>
+                    </div>
+                `;
+            })
+            .catch((error) => {
+                alert('There was an error submitting your request. Please try again or contact us directly.');
+                console.error('Form submission error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
